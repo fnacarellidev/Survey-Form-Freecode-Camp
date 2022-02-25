@@ -56,13 +56,13 @@ body::before {
     box-sizing: border-box;
 }
 
-#survey-form {
+form#survey-form {
     box-sizing: border-box;
     background-color: var(--color-darkblue-alpha);
     height: 100vh;
     width: 50vw;
     border-radius: 10px;
-    padding: 30px 40px;
+    padding: 30px 25px;
     opacity: 0.85;
 }
 
@@ -81,4 +81,14 @@ body::before {
 
 .description-input {
     font-size: 20px;
+}
+
+textarea { 
+    resize: none;
+    width: 100%;
+    height: 150px;
+}
+
+#submit {
+    width: 100%;
 }
