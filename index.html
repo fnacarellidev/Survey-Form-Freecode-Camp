@@ -18,25 +18,25 @@
         </div>
         <div class="page__main-container">
             <form action="#" id="survey-form">
-                <label for="name" id="name=label" class="description-input">
+                <label for="name" id="name=label" class="description-items">
                     Name
                     <input type="text" name="" id="name" required class="input-area" placeholder="Enter your name" style="display: block;">
                 </label>
 
-                <label for="email" id="email-label" class="description-input">
+                <label for="email" id="email-label" class="description-items">
                     Email
                     <input type="text" name="" id="email" required class="input-area" placeholder="Enter your Email" style="display: block;">
                 </label>
 
-                <label for="number" id="number-label" class="description-input">
+                <label for="number" id="number-label" class="description-items">
                     Age (optional)
                     <input type="number" name="" id="number" class="input-area" placeholder="Age" style="display: block;">
                 </label>
 
                 <div class="dropdown-wrap">
-                    <p id="dropdown-title">Which option best describes your current role?</p>
-                    <select name="" id="dropdown">
-                        <option value="default">Select current role</option>
+                    <p class="description-items">Which option best describes your current role?</p>
+                    <select name="" id="dropdown" class="dropdown-styles">
+                        <option value="default" selected disabled>Select current role</option>
                         <option value="student">Student</option>
                         <option value="full-time-job">Full Time Job</option>
                         <option value="full-time-learner">Full Time Learner</option>
@@ -45,20 +45,28 @@
                     </select>
                 </div>
 
-                <label for="">
-                    <input type="radio" name="recommend-freecodecamp" id="" value="">
-                </label>
-                <label for="">
-                    <input type="radio" name="recommend-freecodecamp" id="" value="">
-                </label>
-                <label for="">
-                    <input type="radio" name="recommend-freecodecamp" id="" value="">
-                </label>
+                <div class="radio-wrap">
+                    <p class="description-items">Would you recommend freeCodeCamp to a friend?</p>
+                    <label class="label-radio">
+                        <input type="radio" name="recommend-freecodecamp" value="definitely">
+                        <p class="radio-description">Definitely</p>
+                    </label>
+                    <label class="label-radio">
+                        <input type="radio" name="recommend-freecodecamp" value="maybe">
+                        <p class="radio-description">Maybe</p>
+                    </label>
+                    <label class="label-radio">
+                        <input type="radio" name="recommend-freecodecamp" value="not-sure">
+                        <p class="radio-description">Not sure</p>
+                    </label>
+                </div>
+
+
 
                 <div class="dropdown-wrap">
-                    <p class="dropdown-title">What is your favorite feature of freeCodeCamp?</p>
-                    <select name="" id="dropdown2">
-                        <option value="default">Select an option</option>
+                    <p class="description-items">What is your favorite feature of freeCodeCamp?</p>
+                    <select name="" id="dropdown2" class="dropdown-styles">
+                        <option value="default" selected disabled>Select an option</option>
                         <option value="challenges">Challenges</option>
                         <option value="projects">Projects</option>
                         <option value="community">Community</option>
@@ -67,44 +75,55 @@
                 </div>
 
                 <div class="checkbox-wrap">
-                    <p class="checkbox-title">What would you like to see improved? (Check all that apply)</p>
-                    <label for="">
-                        <input type="checkbox" name="what-to-improve" id="" value="">
+                    <p class="description-items">What would you like to see improved? <small id="small-letters">(Check all that apply)</small> </p>
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="what-to-improve" id="front-end-projects-checkbox" value="front-end-projects-checkbox" class="checkboxes">
+                        Front-end Projects
                     </label>
-                    <label for="">
-                        <input type="checkbox" name="what-to-improve" id="" value="">
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="what-to-improve" id="back-end-projects-checkbox" value="back-end-projects-checkbox" class="checkboxes">
+                        Back-end Projects
                     </label>
-                    <label for="">
-                        <input type="checkbox" name="what-to-improve" id="" value="">
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="what-to-improve" id="data-visualization-checkbox" value="data-visualization-checkbox" class="checkboxes">
+                        Data Visualization
                     </label>
-                    <label for="">
-                        <input type="checkbox" name="what-to-improve" id="" value="">
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="what-to-improve" id="challenges-checkbox" value="challenges-checkbox" class="checkboxes">
+                        Challenges
                     </label>
-                    <label for="">
-                        <input type="checkbox" name="what-to-improve" id="" value="">
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="what-to-improve" id="open-source-checkbox" value="open-source-checkbox" class="checkboxes">
+                        Open Source Community
                     </label>
-                    <label for="">
-                        <input type="checkbox" name="what-to-improve" id="" value="">
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="what-to-improve" id="gitter-help-rooms-checkbox" value="gitter-help-rooms-checkbox" class="checkboxes">
+                        Gitter help rooms
                     </label>
-                    <label for="">
-                        <input type="checkbox" name="what-to-improve" id="" value="">
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="what-to-improve" id="videos-checkbox" value="videos-checkbox" class="checkboxes">
+                        Videos
                     </label>
-                    <label for="">
-                        <input type="checkbox" name="what-to-improve" id="" value="">
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="what-to-improve" id="city-meetups-checkbox" value="city-meetups-checkbox" class="checkboxes">
+                        City Meetups
                     </label>
-                    <label for="">
-                        <input type="checkbox" name="what-to-improve" id="" value="">
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="what-to-improve" id="wiki-checkbox" value="wiki-checkbox" class="checkboxes">
+                        Wiki
                     </label>
-                    <label for="">
-                        <input type="checkbox" name="what-to-improve" id="" value="">
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="what-to-improve" id="forum-checkbox" value="forum-checkbox" class="checkboxes">
+                        Forum
                     </label>
-                    <label for="">
-                        <input type="checkbox" name="what-to-improve" id="" value="">
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="what-to-improve" id="additional-courses-checkbox" value="additional-courses-checkbox" class="checkboxes">
+                        Additional Courses
                     </label>
                 </div>
 
                 <div class="textarea-wrap">
-                    <p id="textarea-title">
+                    <p class="description-items">
                         Any comments or suggestions?
                     </p>
                     <textarea name="" id="survey-form"></textarea>
